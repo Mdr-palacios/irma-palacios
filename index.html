@@ -4,227 +4,287 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Irma Palacios — Operations & Data Quality Leader</title>
-  <meta name="description" content="Irma Palacios is an operations and data quality leader with 9+ years of experience in progressive civic organizations, co-founder of DatosLab and Language Justice Solutions." />
-  <meta property="og:title" content="Irma Palacios — Operations & Data Quality Leader" />
-  <meta property="og:description" content="Co-founder of DatosLab. Operations leader across civic, data, and language justice organizations." />
+  <meta name="description" content="Irma Palacios — Operations and data quality leader, co-founder of DatosLab and Language Justice Solutions. 9+ years building civic program integrity." />
+  <meta property="og:title" content="Irma Palacios" />
+  <meta property="og:description" content="Operations & Data Quality Leader · Civic Organizer · Multilingual Trainer" />
   <meta property="og:type" content="website" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="site-header" id="top">
-    <nav class="nav-inner">
+  <!-- Scroll progress bar -->
+  <div class="scroll-bar" id="scroll-bar" aria-hidden="true"></div>
+
+  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
       <a href="#top" class="nav-logo" aria-label="Irma Palacios home">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-          <rect width="36" height="36" rx="4" fill="var(--color-primary)"/>
-          <text x="18" y="25" text-anchor="middle" font-family="Instrument Serif, serif" font-size="20" fill="#fff" letter-spacing="-0.5">IP</text>
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+          <rect width="38" height="38" rx="6" fill="var(--color-primary)"/>
+          <text x="19" y="27" text-anchor="middle"
+            font-family="Cormorant Garamond, Georgia, serif"
+            font-size="19" font-style="italic" font-weight="700"
+            fill="var(--color-bg)" letter-spacing="-0.5">IP</text>
         </svg>
-        <span class="nav-name">Irma Palacios</span>
+        <span class="nav-wordmark">Irma Palacios</span>
       </a>
-      <ul class="nav-links" role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-btn" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
-    </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="top">
 
-    <!-- HERO -->
+    <!-- ── HERO ────────────────────────────────────────────── -->
     <section class="hero">
       <div class="hero-inner">
-        <div class="hero-tag">Available for new opportunities</div>
-        <h1 class="hero-name">Irma<br/><em>Palacios</em></h1>
-        <p class="hero-title">Operations &amp; Data Quality Leader<br/>Civic Organizer · Multilingual Trainer</p>
-        <p class="hero-summary">
-          Co-founder of <a href="https://datoslab.org" target="_blank" rel="noopener">DatosLab</a> and Language Justice Solutions.
-          Building systems that protect program integrity, develop people, and move communities forward.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
-          <a href="#experience" class="btn btn-ghost">View experience</a>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-card">
-          <div class="card-label">Current focus</div>
-          <div class="card-org">DatosLab</div>
-          <div class="card-role">Co-founder &amp; Data Analysis Program Director</div>
-          <div class="card-detail">Training organizers &amp; program staff in data skills that move communities.</div>
-        </div>
-        <div class="hero-stat-row">
-          <div class="hero-stat">
-            <span class="stat-num">9+</span>
-            <span class="stat-label">Years in civic ops</span>
+
+        <div class="hero-left">
+          <div class="hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Available for new opportunities
           </div>
-          <div class="hero-stat">
-            <span class="stat-num">2</span>
-            <span class="stat-label">Orgs co-founded</span>
-          </div>
-          <div class="hero-stat">
-            <span class="stat-num">EN · ES</span>
-            <span class="stat-label">Bilingual</span>
+
+          <h1 class="hero-name">
+            <span class="name-plain">Irma</span>
+            <span class="name-gradient">Palacios</span>
+          </h1>
+
+          <p class="hero-title">Operations &amp; Data Quality Leader<br/>Civic Organizer &nbsp;·&nbsp; Multilingual Trainer</p>
+
+          <p class="hero-bio">
+            Co-founder of <a href="https://datoslab.org" target="_blank" rel="noopener" class="bio-link">DatosLab</a>
+            and Language Justice Solutions — building systems that protect
+            <strong class="em">program integrity</strong>, develop
+            <strong class="em">people</strong>, and move
+            <strong class="em">communities forward</strong>.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+            <a href="#experience" class="btn btn-ghost">View experience</a>
           </div>
         </div>
+
+        <div class="hero-right">
+          <div class="focus-card">
+            <div class="focus-label">Currently</div>
+            <div class="focus-org">DatosLab</div>
+            <div class="focus-role">Co-founder &amp; Data Analysis Program Director</div>
+            <div class="focus-desc">Training organizers &amp; program staff in data skills that move communities.</div>
+            <a href="https://datoslab.org" class="focus-link" target="_blank" rel="noopener">datoslab.org ↗</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-n">9+</span>
+              <span class="stat-l">Years in civic ops</span>
+            </div>
+            <div class="stat">
+              <span class="stat-n">2</span>
+              <span class="stat-l">Orgs co-founded</span>
+            </div>
+            <div class="stat stat-lang">
+              <span class="stat-n">EN · ES</span>
+              <span class="stat-l">Bilingual</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ── MARQUEE ──────────────────────────────────────────── -->
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Quality Assurance</span><span class="dot">◆</span>
+        <span>Data Monitoring</span><span class="dot">◆</span>
+        <span>Operations Management</span><span class="dot">◆</span>
+        <span>Program Integrity</span><span class="dot">◆</span>
+        <span>Team Leadership</span><span class="dot">◆</span>
+        <span>Coaching &amp; Retraining</span><span class="dot">◆</span>
+        <span>Community Organizing</span><span class="dot">◆</span>
+        <span>Anomaly Detection</span><span class="dot">◆</span>
+        <span>Multilingual Training</span><span class="dot">◆</span>
+        <span>Escalation Judgment</span><span class="dot">◆</span>
+        <span>Data Visualization</span><span class="dot">◆</span>
+        <span>Systems Building</span><span class="dot">◆</span>
+        <span>Relational Outreach</span><span class="dot">◆</span>
+        <!-- duplicate for seamless loop -->
+        <span>Quality Assurance</span><span class="dot">◆</span>
+        <span>Data Monitoring</span><span class="dot">◆</span>
+        <span>Operations Management</span><span class="dot">◆</span>
+        <span>Program Integrity</span><span class="dot">◆</span>
+        <span>Team Leadership</span><span class="dot">◆</span>
+        <span>Coaching &amp; Retraining</span><span class="dot">◆</span>
+        <span>Community Organizing</span><span class="dot">◆</span>
+        <span>Anomaly Detection</span><span class="dot">◆</span>
+        <span>Multilingual Training</span><span class="dot">◆</span>
+        <span>Escalation Judgment</span><span class="dot">◆</span>
+        <span>Data Visualization</span><span class="dot">◆</span>
+        <span>Systems Building</span><span class="dot">◆</span>
+        <span>Relational Outreach</span><span class="dot">◆</span>
+      </div>
+    </div>
+
+    <!-- ── ABOUT ────────────────────────────────────────────── -->
     <section class="about" id="about">
-      <div class="section-inner">
-        <div class="about-layout">
-          <div class="about-text">
-            <span class="section-eyebrow">About</span>
-            <h2>Systems thinker.<br/>People leader.<br/>Integrity keeper.</h2>
-            <p>
-              I've spent nearly a decade building the operational infrastructure that lets civic organizations do their best work — tracking what's actually happening in the field, coaching people toward accountability, and creating systems that hold up when the stakes are highest.
-            </p>
-            <p>
-              From mutual aid mobilization across rural Georgia to training hundreds of progressive data professionals, I bring a quality-first mindset to every program I touch. I lead with curiosity, not judgment — and I know how to hold a hard conversation without making it personal.
-            </p>
-            <p>
-              Bilingual in English and Spanish. Rooted in Georgia. Ready to go where the work is.
-            </p>
+      <div class="section-wrap">
+        <div class="about-grid">
+          <div class="about-left reveal">
+            <span class="eyebrow">About</span>
+            <h2 class="about-headline">
+              Systems<br/>thinker.<br/>
+              <em>People</em><br/>leader.
+            </h2>
           </div>
-          <div class="about-skills">
-            <h3>Core Competencies</h3>
-            <ul class="skills-grid" role="list">
-              <li>Quality Assurance &amp; Compliance</li>
-              <li>Data Monitoring &amp; Anomaly Detection</li>
-              <li>Operations Management</li>
-              <li>Program Integrity &amp; Fidelity</li>
-              <li>Team Leadership &amp; Coaching</li>
-              <li>Escalation Judgment</li>
-              <li>Community Organizing</li>
-              <li>Relational Outreach</li>
-              <li>Systems Building</li>
-              <li>Multilingual Training</li>
-              <li>Data Visualization</li>
-              <li>Outreach Tracking Platforms</li>
-            </ul>
+          <div class="about-right">
+            <p class="reveal">
+              I've spent <strong class="em">nearly a decade</strong> building the operational infrastructure that lets civic organizations do their best work — tracking what's actually happening in the field, coaching people toward accountability, and creating systems that hold up when the stakes are highest.
+            </p>
+            <p class="reveal">
+              From mutual aid mobilization across <strong class="em">rural Georgia</strong> to training <strong class="em">hundreds</strong> of progressive data professionals, I bring a quality-first mindset to every program I touch. I lead with curiosity, not judgment — and I know how to hold a hard conversation without making it personal.
+            </p>
+            <p class="reveal">Bilingual in <strong class="em">English and Spanish</strong>. Rooted in Georgia. Ready to go where the work is.</p>
+
+            <div class="skills reveal">
+              <h3 class="skills-label">Core Competencies</h3>
+              <ul class="skills-list" role="list">
+                <li>Quality Assurance &amp; Compliance</li>
+                <li>Data Monitoring &amp; Anomaly Detection</li>
+                <li>Operations Management</li>
+                <li>Program Integrity &amp; Fidelity</li>
+                <li>Team Leadership &amp; Coaching</li>
+                <li>Escalation Judgment</li>
+                <li>Community Organizing</li>
+                <li>Relational Outreach</li>
+                <li>Systems Building</li>
+                <li>Multilingual Training</li>
+                <li>Data Visualization</li>
+                <li>Outreach Tracking Platforms</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- ── EXPERIENCE ───────────────────────────────────────── -->
     <section class="experience" id="experience">
-      <div class="section-inner">
-        <span class="section-eyebrow">Experience</span>
-        <h2>Where I've done the work</h2>
+      <div class="section-wrap">
+        <div class="exp-header reveal">
+          <span class="eyebrow">Experience</span>
+          <h2>Where I've done<br/><em>the work</em></h2>
+        </div>
 
         <div class="timeline">
 
           <!-- DatosLab -->
-          <article class="job">
+          <article class="job reveal">
             <div class="job-meta">
-              <div class="job-dates">2024 — Present</div>
-              <div class="job-dot"></div>
+              <span class="job-year">2024 — Present</span>
             </div>
-            <div class="job-content">
-              <div class="job-header">
+            <div class="job-body">
+              <div class="job-top">
                 <div>
                   <h3 class="job-title">Co-founder &amp; Data Analysis Program Director</h3>
                   <a href="https://datoslab.org" class="job-org" target="_blank" rel="noopener">DatosLab ↗</a>
                 </div>
-                <span class="job-badge">Current</span>
+                <span class="job-now">Current</span>
               </div>
               <p class="job-desc">A civic-focused learning platform training organizers, researchers, and program staff in data analysis, visualization, and engineering. Built for the work, not the résumé.</p>
-              <ul class="job-bullets" role="list">
+              <ul class="job-list">
                 <li>Co-founded a mission-driven data training platform built for campaign, research, and program work</li>
-                <li>Directs curriculum across three certificate tracks in data analysis, visualization, and engineering — with human review of every final project</li>
-                <li>Establishes and enforces quality standards for course delivery, ensuring fidelity to civic and multilingual learning contexts</li>
-                <li>Builds and manages instructors with backgrounds in campaign infrastructure, quality systems, and community outreach</li>
-                <li>Designs systems to monitor participant progress, flag gaps, and route learners to appropriate coaching and retraining</li>
+                <li>Directs curriculum across three certificate tracks — with human review of every final project</li>
+                <li>Establishes and enforces quality standards ensuring fidelity to civic and multilingual contexts</li>
+                <li>Builds and manages instructors with backgrounds in campaign infrastructure and quality systems</li>
+                <li>Designs systems to monitor progress, flag gaps, and route learners to coaching and retraining</li>
               </ul>
             </div>
           </article>
 
           <!-- Generation Data -->
-          <article class="job">
+          <article class="job reveal">
             <div class="job-meta">
-              <div class="job-dates">2023 — 2024</div>
-              <div class="job-dot"></div>
+              <span class="job-year">2023 — 2024</span>
             </div>
-            <div class="job-content">
-              <div class="job-header">
+            <div class="job-body">
+              <div class="job-top">
                 <div>
                   <h3 class="job-title">Operations Consultant</h3>
                   <a href="https://generationdata.org" class="job-org" target="_blank" rel="noopener">Generation Data ↗</a>
                 </div>
               </div>
               <p class="job-desc">National nonprofit training the next generation of diverse leaders in progressive, civic, and social impact data.</p>
-              <ul class="job-bullets" role="list">
+              <ul class="job-list">
                 <li>Provided operations support across national data training programs — logistics, compliance, and participant coordination</li>
               </ul>
               <div class="job-sub">
-                <span class="job-sub-label">Spanish Intro to Progressive Data (Datos en Español)</span>
-                <ul class="job-bullets" role="list">
-                  <li>Maintained program fidelity and data integrity across reporting, attendance, and participant outcomes for a bilingual, Spanish-language cohort</li>
-                  <li>Oversaw instructor and volunteer coordination — distinguishing training gaps from performance concerns requiring escalation</li>
+                <span class="sub-label">Spanish Intro to Progressive Data (Datos en Español)</span>
+                <ul class="job-list">
+                  <li>Maintained program fidelity and data integrity for a bilingual, Spanish-language cohort</li>
+                  <li>Oversaw instructor and volunteer coordination — distinguishing training gaps from escalation concerns</li>
                   <li>Supported career placement programming, alumni engagement, and reporting to funders</li>
-                  <li>Ensured cross-cohort consistency in participant experience, working closely with curriculum teams to course-correct in real time</li>
+                  <li>Ensured cross-cohort consistency working closely with curriculum teams to course-correct in real time</li>
                 </ul>
               </div>
             </div>
           </article>
 
           <!-- GAFU -->
-          <article class="job">
+          <article class="job reveal">
             <div class="job-meta">
-              <div class="job-dates">2019 — 2022</div>
-              <div class="job-dot"></div>
+              <span class="job-year">2019 — 2022</span>
             </div>
-            <div class="job-content">
-              <div class="job-header">
+            <div class="job-body">
+              <div class="job-top">
                 <div>
                   <h3 class="job-title">Operations Manager</h3>
                   <span class="job-org">GA Familias Unidas (GAFU)</span>
                 </div>
               </div>
               <p class="job-desc">Mutual aid Latinx organization mobilizing across Georgia on COVID-19 relief, immigrant rights, and voter rights activism.</p>
-              <ul class="job-bullets" role="list">
-                <li>Managed operations for a rapid-growth grassroots organization expanding from Hall County across rural Georgia during COVID-19</li>
-                <li>Built and maintained systems for volunteer coordination, outreach tracking, and field incident reporting — with a strong focus on data accuracy and accountability</li>
-                <li>Oversaw program compliance for constituency-facing services, ensuring quality of interactions between staff, volunteers, and community members</li>
-                <li>Monitored field activity data for anomalies and coached organizers on accurate reporting and documentation protocols</li>
-                <li>Coordinated cross-functional teams and external partners to maintain consistency in mutual aid delivery and voter outreach</li>
+              <ul class="job-list">
+                <li>Managed operations for a rapid-growth organization expanding from Hall County across rural Georgia during COVID-19</li>
+                <li>Built systems for volunteer coordination, outreach tracking, and field incident reporting with a focus on data accuracy</li>
+                <li>Oversaw program compliance ensuring quality of interactions between staff, volunteers, and community members</li>
+                <li>Monitored field activity data for anomalies and coached organizers on accurate reporting protocols</li>
+                <li>Coordinated cross-functional teams to maintain consistency in mutual aid delivery and voter outreach</li>
               </ul>
             </div>
           </article>
 
           <!-- Language Justice Solutions -->
-          <article class="job">
+          <article class="job reveal">
             <div class="job-meta">
-              <div class="job-dates">2016 — 2025</div>
-              <div class="job-dot"></div>
+              <span class="job-year">2016 — 2025</span>
             </div>
-            <div class="job-content">
-              <div class="job-header">
+            <div class="job-body">
+              <div class="job-top">
                 <div>
                   <h3 class="job-title">Co-founder &amp; CEO</h3>
                   <span class="job-org">Language Justice Solutions, LLC</span>
                 </div>
               </div>
               <p class="job-desc">Language justice consulting firm providing interpretation, translation, and multilingual facilitation to civic and advocacy organizations.</p>
-              <ul class="job-bullets" role="list">
-                <li>Co-founded and led a language justice firm serving electoral campaigns, grassroots organizers, and community advocacy organizations across Georgia</li>
-                <li>Recruited, trained, and managed a network of community interpreters — establishing quality standards, performance review processes, and escalation protocols</li>
+              <ul class="job-list">
+                <li>Co-founded and led a language justice firm serving electoral campaigns and community advocacy organizations across Georgia</li>
+                <li>Recruited, trained, and managed a network of interpreters — establishing quality standards, review processes, and escalation protocols</li>
                 <li>Designed QA frameworks ensuring accuracy, cultural competency, and equity in multilingual civic spaces</li>
-                <li>Delivered services in Spanish and English across organizing, electoral, and direct service contexts — building trust with communities unfamiliar with institutional processes</li>
-                <li>Led sensitive conversations with clients and interpreters requiring discretion, care, and clear judgment about when to escalate</li>
+                <li>Led sensitive conversations requiring discretion, care, and clear judgment about when to escalate concerns</li>
               </ul>
             </div>
           </article>
@@ -233,28 +293,30 @@
       </div>
     </section>
 
-    <!-- CERTIFICATIONS -->
-    <section class="certifications" id="certifications">
-      <div class="section-inner">
-        <span class="section-eyebrow">Certifications &amp; Training</span>
-        <h2>Continuing the work</h2>
-        <div class="cert-grid">
-          <div class="cert-card">
+    <!-- ── CERTIFICATIONS ───────────────────────────────────── -->
+    <section class="certs" id="certifications">
+      <div class="section-wrap">
+        <div class="certs-header reveal">
+          <span class="eyebrow">Certifications &amp; Training</span>
+          <h2>Continuing<br/><em>the work</em></h2>
+        </div>
+        <div class="certs-grid">
+          <div class="cert-card reveal">
             <div class="cert-year">2025</div>
             <div class="cert-name">Train the Trainer Certification</div>
             <div class="cert-org">University of Georgia</div>
           </div>
-          <div class="cert-card">
+          <div class="cert-card reveal">
             <div class="cert-year">2024</div>
             <div class="cert-name">Advanced Data Visualization</div>
             <div class="cert-org">Generation Data</div>
           </div>
-          <div class="cert-card">
+          <div class="cert-card reveal">
             <div class="cert-year">2020</div>
             <div class="cert-name">Women of Color Certificate</div>
             <div class="cert-org">rePower</div>
           </div>
-          <div class="cert-card">
+          <div class="cert-card reveal">
             <div class="cert-year">2020</div>
             <div class="cert-name">Introduction to Progressive Data</div>
             <div class="cert-org">Generation Data</div>
@@ -263,20 +325,23 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ── CONTACT ──────────────────────────────────────────── -->
     <section class="contact" id="contact">
-      <div class="section-inner contact-inner">
-        <span class="section-eyebrow">Contact</span>
-        <h2>Let's connect</h2>
-        <p class="contact-sub">Open to new opportunities, collaborations, and conversations about civic tech, data quality, and community organizing.</p>
-        <a href="mailto:" class="btn btn-primary btn-large">[Email Address]</a>
-        <p class="contact-hint">Based in Georgia · Available remotely</p>
+      <div class="section-wrap contact-wrap">
+        <div class="reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's<br/><em>connect</em></h2>
+          <p class="contact-sub">Open to new opportunities, collaborations, and conversations about civic tech, data quality, and community organizing.</p>
+          <a href="mailto:" class="btn btn-primary btn-lg">[Email Address]</a>
+          <p class="contact-hint">Based in Georgia &nbsp;·&nbsp; Available remotely</p>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="footer">
     <div class="footer-inner">
       <span>© 2026 Irma Palacios</span>
       <span>Operations &amp; Data Quality Leader</span>
@@ -284,44 +349,64 @@
   </footer>
 
   <script>
-    // Dark mode toggle
-    (function () {
-      const t = document.querySelector('[data-theme-toggle]'),
-        r = document.documentElement;
-      let d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
-      r.setAttribute('data-theme', d);
-      t && t.addEventListener('click', () => {
-        d = d === 'dark' ? 'light' : 'dark';
-        r.setAttribute('data-theme', d);
-        t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
-        t.innerHTML = d === 'dark'
-          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
-          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-      });
-    })();
+  // ── Theme toggle
+  (function () {
+    const btn = document.querySelector('[data-theme-toggle]');
+    const root = document.documentElement;
+    const sun = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+    const moon = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    let dark = matchMedia('(prefers-color-scheme: dark)').matches;
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+    if (btn) btn.innerHTML = dark ? sun : moon;
+    btn && btn.addEventListener('click', () => {
+      dark = !dark;
+      root.setAttribute('data-theme', dark ? 'dark' : 'light');
+      btn.innerHTML = dark ? sun : moon;
+      btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    });
+  })();
 
-    // Scroll-aware header
-    (function () {
-      const header = document.querySelector('.site-header');
-      let lastY = 0;
-      window.addEventListener('scroll', () => {
-        const y = window.scrollY;
-        header.classList.toggle('scrolled', y > 10);
-        header.classList.toggle('hidden', y > lastY && y > 80);
-        lastY = y;
-      }, { passive: true });
-    })();
+  // ── Scroll progress bar
+  (function () {
+    const bar = document.getElementById('scroll-bar');
+    window.addEventListener('scroll', () => {
+      const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      bar.style.width = Math.min(pct, 100) + '%';
+    }, { passive: true });
+  })();
 
-    // Fade-in on scroll
+  // ── Nav: hide on scroll down, show on scroll up
+  (function () {
+    const nav = document.getElementById('nav');
+    let last = 0;
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      nav.classList.toggle('nav--scrolled', y > 20);
+      nav.classList.toggle('nav--hidden', y > last && y > 120);
+      last = y;
+    }, { passive: true });
+  })();
+
+  // ── Scroll reveals (IntersectionObserver)
+  (function () {
+    const els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(el => el.classList.add('visible'));
+      return;
+    }
     const obs = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
       });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.job, .cert-card, .about-text, .about-skills').forEach(el => {
-      el.classList.add('fade-in');
-      obs.observe(el);
-    });
+    }, { threshold: 0.07 });
+    els.forEach(el => obs.observe(el));
+  })();
+
+  // ── Stagger cert cards and job items
+  document.querySelectorAll('.certs-grid .cert-card').forEach((el, i) => {
+    el.style.transitionDelay = (i * 0.08) + 's';
+  });
   </script>
+
 </body>
 </html>
