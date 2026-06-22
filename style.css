@@ -269,8 +269,6 @@ a:hover { color: var(--color-primary-hover); }
 }
 .hero-inner {
   max-width: var(--max-w); width: 100%; margin: 0 auto;
-  display: grid; grid-template-columns: 55% 1fr;
-  gap: var(--s16); align-items: start;
 }
 
 /* Availability badge */
@@ -337,17 +335,24 @@ a:hover { color: var(--color-primary-hover); }
 
 .hero-ctas { display: flex; gap: var(--s3); flex-wrap: wrap; }
 
-/* Hero right panel */
-.hero-right { display: flex; flex-direction: column; gap: var(--s4); }
-
-/* Hero photo */
+/* Hero name + photo side by side */
+.hero-name-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s8);
+  margin-bottom: var(--s6);
+}
+.hero-name-row .hero-name {
+  flex: 1;
+  margin-bottom: 0;
+}
 .hero-photo {
+  width: clamp(160px, 18vw, 240px);
+  flex-shrink: 0;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 4 / 5;
-  max-height: 300px;
+  aspect-ratio: 3 / 4;
   box-shadow: 0 16px 48px rgba(0,0,0,0.14);
-  flex-shrink: 0;
 }
 .hero-photo img {
   width: 100%; height: 100%;
@@ -517,6 +522,33 @@ a:hover { color: var(--color-primary-hover); }
   position: relative;
 }
 .job:first-child { border-top: none; }
+
+/* Experience section spotlight (Currently card + stats) */
+.exp-spotlight {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--s6);
+  padding: var(--s8) 0;
+  border-top: 1px solid var(--color-divider);
+  align-items: start;
+}
+.exp-spotlight .focus-card { max-width: 520px; }
+.exp-spotlight .hero-stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  min-width: 160px;
+}
+.exp-spotlight .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--s4) var(--s5);
+  transition: background-color 0.25s ease;
+}
 
 /* Job card images */
 .job-img {
@@ -689,8 +721,8 @@ a.job-org:hover { color: var(--color-primary-hover); }
 
 /* ── RESPONSIVE ─────────────────────────────────────────────── */
 @media (max-width: 960px) {
-  .hero-inner { grid-template-columns: 1fr; min-height: auto; }
-  .hero-right { order: -1; }
+  .hero-name-row { gap: var(--s5); }
+  .hero-photo { width: clamp(120px, 22vw, 180px); }
   .hero-stats { grid-template-columns: repeat(3, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: var(--s10); }
   .certs-grid { grid-template-columns: repeat(2, 1fr); }
