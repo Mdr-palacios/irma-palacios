@@ -270,7 +270,7 @@ a:hover { color: var(--color-primary-hover); }
 .hero-inner {
   max-width: var(--max-w); width: 100%; margin: 0 auto;
   display: grid; grid-template-columns: 55% 1fr;
-  gap: var(--s16); align-items: center;
+  gap: var(--s16); align-items: start;
 }
 
 /* Availability badge */
@@ -339,6 +339,24 @@ a:hover { color: var(--color-primary-hover); }
 
 /* Hero right panel */
 .hero-right { display: flex; flex-direction: column; gap: var(--s4); }
+
+/* Hero photo */
+.hero-photo {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  max-height: 300px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.14);
+  flex-shrink: 0;
+}
+.hero-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
+  display: block;
+  transition: transform 0.7s var(--ease-out);
+}
+.hero-photo:hover img { transform: scale(1.04); }
 
 .focus-card {
   background: var(--color-surface);
@@ -499,6 +517,25 @@ a:hover { color: var(--color-primary-hover); }
   position: relative;
 }
 .job:first-child { border-top: none; }
+
+/* Job card images */
+.job-img {
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 21 / 9;
+  margin-bottom: var(--s5);
+}
+.job-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.8) brightness(0.97);
+  transition: transform 0.5s var(--ease-out), filter 0.4s ease;
+}
+.job:hover .job-img img {
+  transform: scale(1.04);
+  filter: saturate(1) brightness(1);
+}
 
 /* Left border highlight on hover */
 .job::before {
